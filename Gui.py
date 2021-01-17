@@ -10,7 +10,7 @@ def logbuttonclick():
         if username == "" or pwd == "":
             return None
         global conn
-        conn = pyodbc.connect(driver="SQL Server", server ="192.168.1.14\SQLEXPRESS,1434", user = username, password = pwd)
+        conn = pyodbc.connect(driver="SQL Server", server ="10.140.244.212\SQLEXPRESS,1434", user = username, password = pwd) #192.168.1.14
     except:
         return None
     
